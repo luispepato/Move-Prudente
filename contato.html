@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contato e avaliações | Move Prudente</title><link rel="stylesheet" href="css/style.css"></head><body><header class="topo"><div class="w">
+<a class="logo" href="index.html">Move Prudente</a>
+<nav aria-label="Menu principal"><ul>
+<li><a href="index.html">Início</a></li><li><a href="atracoes.html">Locais</a></li><li><a href="informacoes.html">Horários</a></li><li><a href="itinerario.html">Perto de mim</a></li><li><a href="contato.html" aria-current="page">Contato</a></li>
+</ul></nav></div></header>
+<main class="w"><h1 class="st">Avalie ou cadastre um local</h1>
+<form id="form-aval" class="painel" novalidate><div class="fg">
+<label>Nome<input id="nome" type="text" autocomplete="name"><span class="erro" id="e-nome"></span></label>
+<label>E-mail<input id="email" type="email" autocomplete="email"><span class="erro" id="e-email"></span></label>
+<label>Senha<input id="senha" type="password" autocomplete="new-password"><span class="erro" id="e-senha"></span></label>
+<label>Telefone<input id="fone" type="tel" placeholder="(18) 99999-9999"><span class="erro" id="e-fone"></span></label>
+<label>Local<input id="local" type="text" placeholder="Ex.: Parque do Povo"><span class="erro" id="e-local"></span></label>
+<label>Modalidade<select id="modal"><optgroup label="Esportes coletivos"><option>Futebol</option><option>Vôlei</option></optgroup><optgroup label="Individuais"><option>Corrida</option><option>Skate</option><option>Ginástica ao ar livre</option></optgroup></select></label>
+<label>Frequentadores por dia (estimativa)<input type="number" min="0" value="0"></label>
+<label>Data da visita<input type="date"></label>
+<label>Hora da visita<input type="time"></label>
+<label>Foto do local<input type="file" accept="image/*"></label>
+<label>Cor da sua modalidade<input type="color" value="#06aa48"></label>
+<fieldset class="full" style="border:0"><legend><strong>Tipo de envio</strong></legend><label style="flex-direction:row;gap:6px"><input type="radio" name="tipo-envio" checked>Avaliar local existente</label><label style="flex-direction:row;gap:6px"><input type="radio" name="tipo-envio">Cadastrar novo local</label></fieldset>
+<label>Estrutura<input id="nota-estrutura" type="range" min="0" max="5" step="0.5" value="3"></label>
+<label>Limpeza<input id="nota-limpeza" type="range" min="0" max="5" step="0.5" value="3"></label>
+<label>Segurança<input id="nota-seguranca" type="range" min="0" max="5" step="0.5" value="3"></label>
+<p class="full"><strong>Nota média: <span id="nota-media">3,0</span></strong></p>
+<fieldset class="full" style="border:0"><label style="flex-direction:row;gap:6px"><input type="checkbox">Tem bebedouro</label><label style="flex-direction:row;gap:6px"><input type="checkbox">Tem iluminação à noite</label></fieldset>
+<label class="full">Comentário<textarea rows="4"></textarea></label></div>
+<div class="acoes"><button class="btn" type="submit">Enviar avaliação</button><button class="btn sec" type="reset">Limpar</button></div><p id="msg-form" role="status"></p></form>
+<h2 class="st">Calculadora de calorias e pace</h2>
+<form id="form-calc" class="painel"><div class="fg"><label>Atividade<select id="tipo"><option value="corrida">Corrida</option><option value="caminhada">Caminhada</option><option value="bicicleta">Bicicleta</option></select></label>
+<label>Peso (kg)<input id="peso" type="number" min="1"></label><label>Tempo (minutos)<input id="tempo" type="number" min="1"></label><label>Distância (km, opcional)<input id="dist" type="number" min="0" step="0.1"></label></div>
+<div class="acoes"><button class="btn" type="submit">Calcular</button></div><p id="res-calc" role="status"></p></form></main><footer class="rodape"><div class="w"><p><strong>Move Prudente</strong> · Guia esportivo e de lazer urbano · Projeto de Desenvolvimento Web, Unesp, Ciência da Computação, 2026</p><p><small>Vitor Luiz Seribeli, Luis Felipe Neves Pepato e Leonardo Antônio Santos Silva</small></p></div></footer>
+<script src="js/dados.js"></script><script src="js/app.js"></script></body></html>
