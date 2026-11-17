@@ -27,7 +27,7 @@ input,select,textarea,button{font:inherit}
 .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
 .card{background:#fff;border-bottom:3px solid var(--v);display:flex;flex-direction:column}
 .card:hover h3{text-decoration:underline}
-.th{height:96px;padding:10px;display:flex;align-items:flex-end;color:#fff;font-weight:800;font-size:1.15rem;background:#0b6b36}
+.th{height:150px;padding:10px;display:flex;align-items:flex-end;color:#fff;font-weight:800;font-size:1.15rem;background:#0b6b36}
 .c-corrida{background:#0b6b36}.c-futebol{background:#1b5fa8}.c-volei{background:#d9a400}.c-skate{background:#444}.c-ginastica{background:#a8321b}
 .cb{padding:12px;display:flex;flex-direction:column;gap:4px;flex:1}
 .cb h3{font-size:1.05rem;line-height:1.25}.cb p,.meta{font-size:.88rem;color:var(--c)}

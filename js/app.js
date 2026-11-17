@@ -16,7 +16,13 @@ function distanciaKm(lat1, lng1, lat2, lng2) { // fórmula de Haversine
 
 function criarCard(l, extra) {
   const a = el("article", "card");
-  a.append(el("div", "th c-" + l.cat, CATEGORIAS[l.cat]));
+  const th = el("div", "th c-" + l.cat, CATEGORIAS[l.cat]);
+if (l.img) {
+  th.style.backgroundImage = "linear-gradient(transparent 40%, rgba(0,0,0,.65)), url('" + l.img + "')";
+  th.style.backgroundSize = "cover";
+  th.style.backgroundPosition = "center";
+}
+a.append(th);
   const cb = el("div", "cb");
   cb.append(el("h3", "", l.nome), el("p", "", l.bairro + " · " + formatarValor(l)), el("p", "", l.desc));
   const aberto = estaAberto(l);
